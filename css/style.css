@@ -1,0 +1,62 @@
+:root{
+    --main-dark: rgba(11, 14, 216, 0.733);
+    --main-light: aliceblue;
+    --border-radius: 5px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* doesn't change the width of HTML elements*/
+    border-radius: var(--border-radius);
+    border: 2px solid red;
+
+}
+
+body{
+    background-color: var(--main-dark);
+}
+
+#main-display{
+    display: flexbox;
+    flex-direction: column;
+    width: 80%;
+    margin: 40px auto;
+    
+}
+#title{
+    margin-top: 20px;
+    margin: auto;
+    text-align: center;
+    width: 80%;
+    background-color: var(--main-light);
+    
+}
+#city-input{
+    align-items: center;
+    text-align: center;
+    margin: 20px auto;
+    width: 100%;
+}
+.error{
+    display: inline;
+    color: rgb(228, 190, 190);
+    
+    font-weight: bold;
+    width: 40%;
+}
+.city-field{
+    padding: 2px;
+    background-color: var(--main-light);
+
+}
+#weather-info div{
+    width: 20%;
+    margin-top: 50px;
+    margin-left: 50vh;
+    padding: 2px;
+    background-color: var(--main-light);
+    font-weight: bold;
+
+}
+
