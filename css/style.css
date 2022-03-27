@@ -2,6 +2,7 @@
     --main-dark: rgba(11, 14, 216, 0.733);
     --main-light: aliceblue;
     --border-radius: 5px;
+    --textColor: rgb(168, 167, 167)
 }
 
 *{
@@ -9,7 +10,7 @@
     padding: 0;
     box-sizing: border-box; /* doesn't change the width of HTML elements*/
     border-radius: var(--border-radius);
-    border: 2px solid red;
+    /* border: 2px solid red; */
 
 }
 
@@ -22,21 +23,27 @@ body{
     flex-direction: column;
     width: 80%;
     margin: 40px auto;
+    align-items: center;
     
 }
 #title{
     margin-top: 20px;
     margin: auto;
+    color: whitesmoke;
     text-align: center;
-    width: 80%;
-    background-color: var(--main-light);
+    width: 40%;
+    background-color: rgb(168, 167, 167);
     
 }
+
 #city-input{
     align-items: center;
     text-align: center;
     margin: 20px auto;
     width: 100%;
+}
+.border{
+    border: 2px solid yellow;
 }
 .error{
     display: inline;
@@ -48,11 +55,25 @@ body{
 .city-field{
     padding: 2px;
     background-color: var(--main-light);
+   
 
 }
-#weather-info div{
+[type="text"]{
+    width: 25%
+}
+span{
+    display: inline-block;
+    color: var(--main-dark);
+    text-align: right;
+    position: relative;
+    right: 0;
+}
+
+.weather-info div{
+  
+    color: rgb(168, 167, 167);
     width: 20%;
-    margin-top: 50px;
+    margin-bottom: 10px;
     margin-left: 50vh;
     padding: 2px;
     background-color: var(--main-light);
@@ -60,3 +81,21 @@ body{
 
 }
 
+
+footer{
+    color: var(--textColor);
+    margin-top: 20px;
+    position: relative;
+    left: 10vh;
+}
+
+a{
+    
+    color: var(--textColor)
+}
+
+a:hover{
+    background-color: rgb(184, 85, 184);
+    color: yellow;
+    padding: 2px;
+}

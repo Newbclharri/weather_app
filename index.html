@@ -8,23 +8,33 @@
     <script src="https://code.jquery.com/jquery-3.6.0.js" 
     integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" 
     crossorigin="anonymous" defer></script>
+    <script src="./js/config.js" defer></script>
     <script src="./js/app.js" defer></script>
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
     <main id="main-display">
-        <div><h1 id="title" class="main">AJAX Weather Lab</h1></div>
+        <div>
+            <h1 id="title" class="main border">City Weather Checker</h1>
+                       
+        </div>
+        
         <section id="city-input">
             <form action="">
-                <input class="city-field" type="text" placeholder="City, State">
-                <button class = "city-field" type="submit">Get Weather Info</button>
+                <input class="city-field border" type="text" placeholder="City, State">
+                <button class = "city-field" type="submit">Search</button>
             </form>
         </section>
-        <section id="weather-info" class="main">            
-            <div id="temp" class="main">Temperature: </div>
-            <div id="windshield" class="main">Feels Like: </div>
-            <div id="weather" class="main">Weather: </div>
+        <section class="weather-info" class="main">
+            <div id="city" class="main border">Your City: </div>            
+            <div id="temp" class="main border">Temperature: </div>
+            <div id="windshield" class="main border">Feels Like: </div>
+            <div id="weather" class="main border">Weather: </div>
+           
         </section>        
     </main>
+    <footer>
+        Powered by <a href="https://openweathermap.org/api">openweathermap.org</a>
+    </footer> 
 </body>
 </html>
